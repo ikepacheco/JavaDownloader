@@ -235,7 +235,7 @@ public class MainApp extends JFrame {
 				setLocation(xScreen - xMouse, yScreen - yMouse);
 			}
 		});
-		panelTopOptions.setBackground(SystemColor.control);
+		panelTopOptions.setBackground(new Color(255, 213, 213));
 		panelTopOptions.setBounds(0, 0, 614, 269);
 		getContentPane().add(panelTopOptions);
 		panelTopOptions.setLayout(null);
