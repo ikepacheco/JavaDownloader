@@ -42,6 +42,7 @@ import java.awt.ComponentOrientation;
 import javax.swing.DebugGraphics;
 import java.util.Locale;
 import java.awt.SystemColor;
+import java.awt.Label;
 
 
 public class MainApp extends JFrame {
@@ -234,7 +235,7 @@ public class MainApp extends JFrame {
 				setLocation(xScreen - xMouse, yScreen - yMouse);
 			}
 		});
-		panelTopOptions.setBackground(new Color(255, 213, 213));
+		panelTopOptions.setBackground(SystemColor.control);
 		panelTopOptions.setBounds(0, 0, 614, 269);
 		getContentPane().add(panelTopOptions);
 		panelTopOptions.setLayout(null);
@@ -244,7 +245,7 @@ public class MainApp extends JFrame {
 			
 		});
 		btnExit.setBackground(Color.WHITE);
-		btnExit.setBounds(11, 12, 41, 41);
+		btnExit.setBounds(12, 12, 41, 41);
 		panelTopOptions.add(btnExit);
 		btnExit.setLayout(null);
 		
@@ -276,6 +277,12 @@ public class MainApp extends JFrame {
 		panel.setBackground(new Color(255, 255, 255));
 		panel.setBounds(10, 11, 594, 247);
 		panelTopOptions.add(panel);
+		panel.setLayout(null);
+		
+		Label label = new Label("@IkePacheco");
+		label.setForeground(new Color(192, 192, 192));
+		label.setBounds(10, 215, 77, 22);
+		panel.add(label);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 614, 269);
 		
